@@ -78,7 +78,7 @@
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
 (setq user-full-name ""
-      user-mail-address "waemfinger@gmail.com")
+      user-mail-address "")
 
 (use-package blamer)
 (global-blamer-mode 1) ;; make sure to auto-enable blamer for all files if possible
