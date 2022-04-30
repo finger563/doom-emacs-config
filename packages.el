@@ -16,6 +16,9 @@
 
 (package! typescript-mode)
 
+(package! mermaid-mode
+  :recipe (:host github :repo "abrochard/mermaid-mode"))
+
 ;; (package! org-roam
 ;;   :recipe (:host github :repo "org-roam/org-roam"))
 

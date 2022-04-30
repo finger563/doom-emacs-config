@@ -43,6 +43,7 @@
 (setq org-directory "~/org/")
 
 (setq org-roam-directory "~/roam_notes/")
+(setq ob-mermaid-cli-path "/opt/homebrew/bin/mmdc")
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
