@@ -19,6 +19,9 @@
 (package! mermaid-mode
   :recipe (:host github :repo "abrochard/mermaid-mode"))
 
+(package! ob-mermaid
+  :recipe (:host github :repo "arnm/ob-mermaid"))
+
 ;; (package! org-roam
 ;;   :recipe (:host github :repo "org-roam/org-roam"))
 
