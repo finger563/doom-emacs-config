@@ -16,6 +16,8 @@
 
 (package! typescript-mode)
 
+(package! cmake-mode)
+
 (package! mermaid-mode
   :recipe (:host github :repo "abrochard/mermaid-mode"))
 
