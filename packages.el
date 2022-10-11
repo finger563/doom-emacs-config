@@ -18,6 +18,8 @@
 
 (package! cmake-mode)
 
+(package! qml-mode)
+
 (package! mermaid-mode
   :recipe (:host github :repo "abrochard/mermaid-mode"))
 
