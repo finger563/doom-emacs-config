@@ -20,6 +20,9 @@
 
 (package! qml-mode)
 
+(package! yaml)
+(package! yaml-mode)
+
 (package! mermaid-mode
   :recipe (:host github :repo "abrochard/mermaid-mode"))
 
