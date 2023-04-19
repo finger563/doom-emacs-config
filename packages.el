@@ -23,6 +23,8 @@
 (package! yaml)
 (package! yaml-mode)
 
+(package! exec-path-from-shell)
+
 (package! mermaid-mode
   :recipe (:host github :repo "abrochard/mermaid-mode"))
 

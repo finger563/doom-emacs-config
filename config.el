@@ -42,6 +42,9 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "WAIT(w@/!)" "|" "DONE(d!)" "CANCELED(c@)")))
+
 (setq org-roam-directory "~/roam_notes/")
 (setq ob-mermaid-cli-path "/opt/homebrew/bin/mmdc")
 
