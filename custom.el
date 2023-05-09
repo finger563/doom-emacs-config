@@ -13,4 +13,4 @@
 (put 'upcase-region 'disabled nil)
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
-(load "~/copilot-emacsd/init")
+;; (load "~/copilot-emacsd/init")

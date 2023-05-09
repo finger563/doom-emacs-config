@@ -31,6 +31,9 @@
 (package! ob-mermaid
   :recipe (:host github :repo "arnm/ob-mermaid"))
 
+(package! copilot
+  :recipe (:host github :repo "zerolfx/copilot.el" :files ("*.el" "dist")))
+
 ;; (package! org-roam
 ;;   :recipe (:host github :repo "org-roam/org-roam"))
 
