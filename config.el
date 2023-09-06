@@ -46,7 +46,8 @@
       '((sequence "TODO(t)" "WAIT(w@/!)" "|" "DONE(d!)" "CANCELED(c@)")))
 
 (setq org-roam-directory "~/roam_notes/")
-(setq ob-mermaid-cli-path "/opt/homebrew/bin/mmdc")
+;; (setq ob-mermaid-cli-path "/opt/homebrew/bin/mmdc")
+(setq ob-mermaid-cli-path "/Users/bob/.nvm/versions/node/v18.16.0/bin/mmdc")
 
 ;; (org-babel-do-load-languages
 ;;     'org-babel-load-languages
@@ -134,7 +135,15 @@
 (use-package! copilot
   :hook (prog-mode . copilot-mode)
   :bind (:map copilot-completion-map
-              ("<tab>" . 'copilot-accept-completion)
-              ("TAB" . 'copilot-accept-completion)
+              ("C-<return>" . 'copilot-accept-completion)
+              ("RETURN" . 'copilot-accept-completion)
+              ("M-n" . 'copilot-next-completion)
+              ("M-p" . 'copilot-previous-completion)
               ("C-TAB" . 'copilot-accept-completion-by-word)
               ("C-<tab>" . 'copilot-accept-completion-by-word)))
+
+(defun cae-copilot-clear-overlay-h ()
+ "Like `copilot-clear-overlay', but returns `t' if the overlay was visible."
+ (when (copilot--overlay-visible)
+  (copilot-clear-overlay) t))
+(add-hook 'doom-escape-hook #'cae-copilot-clear-overlay-h)
