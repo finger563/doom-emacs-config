@@ -20,6 +20,8 @@
 
 (package! qml-mode)
 
+(package! kconfig-mode)
+
 (package! yaml)
 (package! yaml-mode)
 
