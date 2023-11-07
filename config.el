@@ -148,6 +148,9 @@
   (copilot-clear-overlay) t))
 (add-hook 'doom-escape-hook #'cae-copilot-clear-overlay-h)
 
+;; set Kconfig.projbuild (*.projbuild) files to use kconfig-mode
+(add-to-list 'auto-mode-alist '("\\.projbuild\\'" . kconfig-mode))
+
 ;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph
 (defun unfill-paragraph (&optional region)
   "Takes a multi-line paragraph and makes it into a single line of text."
