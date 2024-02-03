@@ -22,6 +22,8 @@
 
 (package! kconfig-mode)
 
+(package! powershell)
+
 (package! yaml)
 (package! yaml-mode)
 
