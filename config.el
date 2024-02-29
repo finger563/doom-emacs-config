@@ -150,6 +150,7 @@
 
 ;; set Kconfig.projbuild (*.projbuild) files to use kconfig-mode
 (add-to-list 'auto-mode-alist '("\\.projbuild\\'" . kconfig-mode))
+(add-to-list 'auto-mode-alist '("sdkconfig" . kconfig-mode))
 
 ;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph
 (defun unfill-paragraph (&optional region)

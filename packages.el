@@ -35,8 +35,11 @@
 (package! ob-mermaid
   :recipe (:host github :repo "arnm/ob-mermaid"))
 
+(package! atopile-mode
+  :recipe (:host github :repo "finger563/atopile-mode"))
+
 (package! copilot
-  :recipe (:host github :repo "zerolfx/copilot.el" :files ("*.el" "dist")))
+  :recipe (:host github :repo "copilot-emacs/copilot.el" :files ("*.el" "dist")))
 
 ;; (package! org-roam
 ;;   :recipe (:host github :repo "org-roam/org-roam"))
