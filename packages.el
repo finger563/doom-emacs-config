@@ -9,10 +9,10 @@
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
 
-(package! blamer)
+;; (package! blamer)
 
-(package! docstr
-  :recipe (:host github :repo "jcs-elpa/docstr"))
+;; (package! docstr
+;;   :recipe (:host github :repo "jcs-elpa/docstr"))
 
 (package! typescript-mode)
 
@@ -37,6 +37,9 @@
 
 (package! atopile-mode
   :recipe (:host github :repo "finger563/atopile-mode"))
+
+(package! kdl-ts-mode
+  :recipe (:host github :repo "finger563/kdl-ts-mode"))
 
 (package! copilot
   :recipe (:host github :repo "copilot-emacs/copilot.el" :files ("*.el" "dist")))

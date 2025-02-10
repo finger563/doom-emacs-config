@@ -87,12 +87,12 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-(use-package blamer)
-(global-blamer-mode 1) ;; make sure to auto-enable blamer for all files if possible
-(setq blamer-min-offset 10) ;; keep it close to the end of text in the line
-;;(setq blamer-prettify-time-p 0)
-(setq blamer-type 'visual) ;; only the line that we're on
-(setq blamer-max-commit-message-length 72) ;; i have some long commit messages...
+;; (use-package blamer)
+;; (global-blamer-mode 1) ;; make sure to auto-enable blamer for all files if possible
+;; (setq blamer-min-offset 10) ;; keep it close to the end of text in the line
+;; ;;(setq blamer-prettify-time-p 0)
+;; (setq blamer-type 'visual) ;; only the line that we're on
+;; (setq blamer-max-commit-message-length 72) ;; i have some long commit messages...
 
 ;; (use-package org-roam
 ;;   :ensure t
