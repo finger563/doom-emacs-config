@@ -150,6 +150,9 @@
   ;; (markdown-enable-math nil)
   (markdown-gfm-use-electric-backquote nil))
 
+;; (use-package emojify
+;;   :hook (after-init . global-emojify-mode))
+
 ;; accept completion from copilot and fallback to company
 (use-package! copilot
   :hook (prog-mode . copilot-mode)
