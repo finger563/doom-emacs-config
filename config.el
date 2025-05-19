@@ -131,6 +131,25 @@
 ;; (setq blamer-commit-formatter "%s") ;; ● %s
 ;;
 
+(setq  x-meta-keysym 'meta
+       x-super-keysym 'meta)
+
+;; key bindings
+(when (eq system-type 'darwin) ;; mac specific settings
+  ;; (setq mac-option-modifier 'alt)
+  (setq mac-command-modifier 'meta)
+  (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
+  )
+
+(use-package markdown-mode
+  :ensure t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :custom
+  ;; (markdown-italic-underscore nil)
+  (markdown-enable-html nil)
+  ;; (markdown-enable-math nil)
+  (markdown-gfm-use-electric-backquote nil))
+
 ;; accept completion from copilot and fallback to company
 (use-package! copilot
   :hook (prog-mode . copilot-mode)
